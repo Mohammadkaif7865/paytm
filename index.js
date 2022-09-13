@@ -41,7 +41,7 @@ if(!paymentDetails.amount || !paymentDetails.customerId || !paymentDetails.custo
     params['CUST_ID'] = paymentDetails.customerId;
     params['TXN_AMOUNT'] = paymentDetails.amount;
     /* where is app is hosted (heroku url)*/
-    params['CALLBACK_URL'] = 'https://paytmmerchant.herokuapp.com/paynow';
+    params['CALLBACK_URL'] = 'https://paytmmerchant.herokuapp.com/callback';
     params['EMAIL'] = paymentDetails.customerEmail;
     params['MOBILE_NO'] = paymentDetails.customerPhone;
   

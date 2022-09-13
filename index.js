@@ -64,7 +64,7 @@ app.post("/paynow", [parseUrl, parseJson], (req, res) => {
 });
 app.post("/callback", (req, res) => {
   // Route for verifiying payment
-
+  res.preventDefault();
   var body = '';
 
   req.on('data', function (data) {

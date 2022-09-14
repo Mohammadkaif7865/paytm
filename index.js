@@ -118,7 +118,9 @@ app.post("/callback", (req, res) => {
           console.log(">>>>>".response)
           var _results = JSON.parse(response);
           /* where it will come back after payment*/
-          res.redirect(`https://zomatobyme.netlify.app/viewBooking?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`)
+          // ! https://zomatobyme.netlify.app
+          // ! https://localhost:3000
+          res.redirect(`https://localhost:3000/viewBooking?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`)
         });
       });
 

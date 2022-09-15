@@ -120,7 +120,7 @@ app.post("/callback", (req, res) => {
           /* where it will come back after payment*/
           // ! https://zomatobyme.netlify.app
           // ! http://localhost:3000
-          res.redirect(`http://localhost:3000/viewBooking?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`)
+          res.redirect(`https://zomatobyme.netlify.app/viewBooking?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`)
         });
       });
 
